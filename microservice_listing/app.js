@@ -11,7 +11,7 @@ db.sequelize.sync();
 
 const app = express();
 
-app.use(logger("common"));
+app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
