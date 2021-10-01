@@ -23,7 +23,7 @@ const normalizePort = (val) => {
 
 const port = normalizePort(process.env.PORT || "6001");
 
-app.set("port", port);
+app.set("porta", port);
 
 const pipeOrPort = {
   true: `Pipe ${port}`,
