@@ -1,1 +1,1 @@
-web: node ./bin/www
+web: node ./microservice_listing/bin/www
