@@ -1,27 +1,13 @@
-const students = require("../../infrastructure/database/").students;
+const {
+  ListStudents,
+  ListStudentsRegistration,
+} = require("./domain_list_students");
 
-const ListStudents = async (request, response) => {
-  try {
-    const listStudents = await students.findAll({
-      order: [["id", "ASC"]],
-    });
-    response.status(200).send({
-      status: true,
-      fullData: listStudents,
-    });
-  } catch (error) {
-    // eslint-disable-next-line no-console
-    console.log("Error Students ", error);
-    response.status(404).send({
-      status: Boolean(false),
-      errorDetail: error.parent,
-      errorFull: error,
-      errorCode: response.statusCode,
-      errorMessage: response.statusMessage,
-    });
-  }
-};
+const find = async () => await ListStudents(resquet, response);
+const findRegistration = async () =>
+  await ListStudentsRegistration(resquet, response);
 
 module.exports = {
-  ListStudents,
+  find,
+  findRegistration,
 };

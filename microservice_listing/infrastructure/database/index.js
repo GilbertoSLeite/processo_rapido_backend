@@ -2,7 +2,7 @@ const Sequelize = require("sequelize");
 
 const connect = require("../config/connect_database");
 
-const sequelize = connect();
+const sequelize = connect;
 
 const db = {};
 

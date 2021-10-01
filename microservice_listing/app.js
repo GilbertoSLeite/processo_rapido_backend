@@ -3,6 +3,11 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const corsOptions = require("./bin/cors_options");
+const calling_routes = require("./bin/calling_routes");
+
+const db = require("./infrastructure/database/index");
+
+db.sequelize.sync();
 
 const app = express();
 
@@ -17,6 +22,9 @@ app.get("/", (req, res) => {
     message: "Seja bem vindo ao recrutamento do Processo Rápido.",
   });
 });
+
+//Chamando as Rotas
+calling_routes;
 
 // Analisar Cors do Navegador
 app.use(cors(corsOptions));
