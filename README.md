@@ -25,7 +25,8 @@ processorapidobe
    └ bin                           → Estrutura de Funcionamento do Servidor.
       └ cors_options.js            → Configuração para evitar error de Cors Origin.
       └ error-handles.js           → Configuração caso ocorra durante o processo de subida do Servidor.
-      └ error-status.js            → Filtro do Código HTTP Status de Error para Retorno caso ocorra.                     
+      └ error-status.js            → Filtro do Código HTTP Status de Error para Retorno caso ocorra. 
+      └ www                        → Funcionamento do Servidor.                    
    └ domain                        → Camada central das Regras de Negócio do Projeto. 
    └ infrastructure                → Ferramentas relacionada ao Banco de Dados.
       └ config                     → Estrutura de Confiração do Banco de Dados.
