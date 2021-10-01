@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
-const dbConf = require("./db_config");
 const { Client } = require("pg");
+const dbConf = require("./db_config");
 
 const client = new Client({
   connectionString: dbConf.HOST,
