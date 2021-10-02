@@ -18,8 +18,10 @@ module.exports = new Sequelize(dbConf.DB, dbConf.USER, dbConf.PASSWORD, {
   operatorsAliases: 0, // Ao invés de usar false ou true usar 0 ou 1
   ssl: dbConf.ssl,
   dialectOptions: {
-    ssl: dbConf.dialectOptions.ssl,
-    rejectUnauthorized: dbConf.dialectOptions.rejectUnauthorized,
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
   },
   pool: {
     max: dbConf.pool.max,
