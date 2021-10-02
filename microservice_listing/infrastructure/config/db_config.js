@@ -4,7 +4,7 @@ module.exports = {
   USER: "gggoevhglzwrlp",
   PASSWORD: "28baf177da038ef25b6a94e7baa2a79b92bb156e9bb919fa9d62ee0379103728",
   dialect: "postgres",
-  sslmode: "require",
+  ssl: true,
   pool: {
     max: 5,
     min: 0,
@@ -19,7 +19,7 @@ module.exports = {
   USER: "gggoevhglzwrlp",
   PASSWORD: "28baf177da038ef25b6a94e7baa2a79b92bb156e9bb919fa9d62ee0379103728",
   dialect: "postgres",
-  sslmode: "require",
+  ssl: true,
   pool: {
     max: 5,
     min: 0,
