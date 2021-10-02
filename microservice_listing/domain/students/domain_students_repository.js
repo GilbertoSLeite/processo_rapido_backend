@@ -3,9 +3,9 @@ const {
   ListStudentsRegistration,
 } = require("./domain_list_students");
 
-const find = async () => await ListStudents(resquet, response);
-const findRegistration = async () =>
-  await ListStudentsRegistration(resquet, response);
+const find = async (resquet, response) => ListStudents(resquet, response);
+const findRegistration = async (resquet, response) =>
+  ListStudentsRegistration(resquet, response);
 
 module.exports = {
   find,

@@ -3,10 +3,10 @@ const {
 } = require("../../../application/business_rules/students/list_students/getStudents");
 
 module.exports = {
-  async findStudents() {
-    ListStudents.find;
+  async findStudents(resquet, response) {
+    ListStudents.find(resquet, response);
   },
-  async findStudentsRegistration() {
-    ListStudents.findRegistration;
+  async findStudentsRegistration(resquet, response) {
+    ListStudents.findRegistration(resquet, response);
   },
 };

@@ -1,4 +1,4 @@
-const students = require("../../infrastructure/database").students;
+const { students } = require("../../infrastructure/database");
 
 const ListStudents = async (request, response) => {
   try {

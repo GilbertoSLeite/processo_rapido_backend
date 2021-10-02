@@ -3,7 +3,6 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const corsOptions = require("./bin/cors_options");
-const calling_routes = require("./bin/calling_routes");
 
 const db = require("./infrastructure/database/index");
 
@@ -23,8 +22,8 @@ app.get("/", (req, res) => {
   });
 });
 
-//Chamando as Rotas
-calling_routes;
+// Chamando as Rotas
+require("./interfaces/routes/students/routes_students")(app);
 
 // Analisar Cors do Navegador
 app.use(cors(corsOptions));
