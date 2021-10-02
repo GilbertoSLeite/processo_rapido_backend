@@ -17,7 +17,7 @@
 ### Estrutura do Projeto
 
 ```
-processorapidobe 
+processorapidobe
  microservice_listing              → Separando o Serviço de Listagem do Serviço de Criação de Usuário. O intuito é evitar parada de funcionalidade.
    └ application                   → Aplicação da camada de serviço.
        └ security                  → Se necessário, estrutura de segurança.
@@ -25,9 +25,9 @@ processorapidobe
    └ bin                           → Estrutura de Funcionamento do Servidor.
       └ cors_options.js            → Configuração para evitar error de Cors Origin.
       └ error-handles.js           → Configuração caso ocorra durante o processo de subida do Servidor.
-      └ error-status.js            → Filtro do Código HTTP Status de Error para Retorno caso ocorra. 
-      └ www                        → Funcionamento do Servidor.                    
-   └ domain                        → Camada central das Regras de Negócio do Projeto. 
+      └ error-status.js            → Filtro do Código HTTP Status de Error para Retorno caso ocorra.
+      └ www                        → Funcionamento do Servidor.
+   └ domain                        → Camada central das Regras de Negócio do Projeto.
    └ infrastructure                → Ferramentas relacionada ao Banco de Dados.
       └ config                     → Estrutura de Confiração do Banco de Dados.
          └ connect_database.js     → Regra de conexão do Banco de Dados.
@@ -37,5 +37,11 @@ processorapidobe
       └ controllers                → Hapi.js Manipuladores das Rotas de Acesso.
       └ routes                     → Hapi.js Criação e Definição das Rotas de Acesso.
    └ node_modules (generated)      → Biblioteca de Dependências do NPM.
-   └ app.js                        → Início de Tudo. 
+   └ app.js                        → Início de Tudo.
 ```
+
+### Rota do Micro Serviço
+
+https://processorapido.herokuapp.com
+
+https://processorapido.herokuapp.com/aluno/listar
