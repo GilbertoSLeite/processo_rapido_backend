@@ -11,7 +11,6 @@
 - ExpressJS
 - ProstgreSQL(Banco de Dados de Minha Segurança)
 - SequelizeJS
-- PostgreSQL
 - Eslint(Para padronização do código)
 
 ### Estrutura do Projeto
@@ -36,7 +35,7 @@ processorapidobe
    └ interfaces                    → Estrutura dos Casos de Usos por parte do AcessoExterno(Web) e/ou Banco de Dados.
       └ controllers                → Hapi.js Manipuladores das Rotas de Acesso.
       └ routes                     → Hapi.js Criação e Definição das Rotas de Acesso.
-   └ node_modules (generated)      → Biblioteca de Dependências do NPM.
+   └ node_modules                  → Biblioteca de Dependências do NPM.
    └ app.js                        → Início de Tudo.
 ```
 
@@ -45,3 +44,7 @@ processorapidobe
 https://processorapido.herokuapp.com
 
 https://processorapido.herokuapp.com/aluno/listar
+
+### Link da Construção do Front-End
+
+https://proc-rapido-frontend.vercel.app/
